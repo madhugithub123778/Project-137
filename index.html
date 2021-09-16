@@ -1,0 +1,37 @@
+<html>
+<head>
+
+	<title>Video Object Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="https://t3.ftcdn.net/jpg/02/66/33/90/360_F_266339022_WXAMVBMDBlGeO1cWeXOgkpzbnZR1ca4y.jpg">
+
+<center> 
+<div id="header">
+<h1>Video Object Detector</h1>
+<h4>The name of object entered should match with the name present in the Cocossd model. Only then will it be detected</h3>
+</div>
+<br>
+<input type="text"id="object_name"placeholder="Enter Object Name"class="form-control">
+
+<button id="start"onclick="start()">Start</button>
+<br>
+<h3 id="status"class="btn btn-success">Status: <span id="status_val"></span></h3>
+<h3 id="detection_status"class="btn btn-info">Status of Object: <span id="detec_status"></span></h3>
+</center>
+
+<div class="footer">Developed by Madhuvanthi Karthik- Whitehat Jr</div>
+
+<script src="main.js"></script>
+</body>
+</html>
